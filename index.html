@@ -20,7 +20,7 @@
         <input type="text" class="Calculator Screen" id="result" />
       </div>
       <div class="row2">
-        <input type="button" value="MC" />
+        <input type="button" value="MC" onclick="memory_clear()" />
         <input type="button" value="0" onclick="display('0')" />
         <input type="button" value="1" onclick="display('1')" />
         <input type="button" value="2" onclick="display('2')" />
@@ -38,7 +38,7 @@
         <input type="button" value="6" onclick="display('6')" />
         <input type="button" value="7" onclick="display('7')" />
         <input type="button" value="8" onclick="display('8')" />
-        <input type="button" value="x" onclick="display('x')" />
+        <input type="button" value="x" onclick="display('*')" />
       </div>
       <div class="row5">
         <input type="button" value="M+" onclick="memory_add()" />
@@ -51,7 +51,7 @@
         <input type="button" value="1/x" onclick="calculate_div()" />
         <input type="button" value="." onclick="display('.')" />
         <input type="button" value="x2" onclick="calculate_x2()" />
-        <input type="button" value="√" onclick="display('√')" />
+        <input type="button" value="√" onclick="calculate_sqr()" />
         <input type="button" value="C" onclick="clearScreen()" />
       </div>
     </div>

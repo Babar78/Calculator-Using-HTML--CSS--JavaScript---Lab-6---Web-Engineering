@@ -10,6 +10,11 @@ function display(value) {
 
 // This function evaluates the expression and returns result
 function calculate() {
+  var p = Number(document.getElementById("result").value);
+  var q = eval(p);
+  document.getElementById("result").value = q;
+}
+function calculate() {
   var p = document.getElementById("result").value;
   var q = eval(p);
   document.getElementById("result").value = q;
@@ -18,10 +23,14 @@ function calculate() {
 //This function multiplies value by 2
 function calculate_x2() {
   var x = document.getElementById("result").value;
-  var x2 = x * 2;
+  var x2 = x * x;
   document.getElementById("result").value = x2;
 }
-
+// This Function Calculates the square root of value given value
+function calculate_sqr() {
+  let result = document.getElementById("result").value;
+  document.getElementById("result").value = Math.sqrt(result);
+}
 //This Function Inverts the sign of symbol
 function calculate_neg() {
   var x = document.getElementById("result").value;
@@ -45,6 +54,12 @@ function memory_add() {
 
   console.log(mem_value);
 }
+// Function returns the value stored in memory
 function memory_return() {
   document.getElementById("result").value = mem_value;
+}
+
+// Function clears the value stored in memory
+function memory_clear() {
+  mem_value = "";
 }
